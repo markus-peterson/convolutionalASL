@@ -9,8 +9,8 @@ part1,2,3,and 4 to each frame.
 
 
 """
-
-img_folder_path = '/Users/jevanteqaiyim/Desktop/datasetvideos/dataset1/part1/'
+### dataset1 was the videos (not included) ###
+img_folder_path = './dataset1/part1/'
 dirListing = os.listdir(img_folder_path)
 datasetnumber = "dataset" + str(input("What dataset number will you be working on? ")) + "/"
 partnumber = "part" + str(input("What part will you be working on? ")) + "/"
@@ -38,16 +38,16 @@ def makefilestolists(dirListing):
 newarray = makefilestolists(dirListing)
 
 
-folderE = "/Users/jevanteqaiyim/Desktop/dataset/letterE/"
-folderF = "/Users/jevanteqaiyim/Desktop/dataset/letterF/"
-folderI = "/Users/jevanteqaiyim/Desktop/dataset/letterL/"
-folderO = "/Users/jevanteqaiyim/Desktop/dataset/letterO/"
-folderR = "/Users/jevanteqaiyim/Desktop/dataset/letterR/"
-folderFive = "/Users/jevanteqaiyim/Desktop/dataset/numberFive/"
-folderFour = "/Users/jevanteqaiyim/Desktop/dataset/numberFour/"
-folderNine = "/Users/jevanteqaiyim/Desktop/dataset/numberNine/"
-folderSeven = "/Users/jevanteqaiyim/Desktop/dataset/numberSeven/"
-folderTen = "/Users/jevanteqaiyim/Desktop/dataset/numberTen/"
+folderE = "./letterE/"
+folderF = "./letterF/"
+folderI = "./letterL/"
+folderO = "./letterO/"
+folderR = "./letterR/"
+folderFive = "./numberFive/"
+folderFour = "./numberFour/"
+folderNine = "./numberNine/"
+folderSeven = "./numberSeven/"
+folderTen = "./numberTen/"
 
 
 folders = [folderNine, folderTen, folderFour, folderFive,
@@ -81,77 +81,77 @@ def transferFiles(dirListing):
         for i in range(0,10):
             if currentFrame == 0 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame -1], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame -1], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 90 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/'+ datasetnumber + partnumber + newarray[j + currentFrame] , folders[i])
+                    shutil.copy('./datasetvideos/'+ datasetnumber + partnumber + newarray[j + currentFrame] , folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 180 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90            
             elif currentFrame == 270 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/'  + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/'  + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 360 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' +  datasetnumber + partnumber  +  newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' +  datasetnumber + partnumber  +  newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 450 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos'+ datasetnumber + partnumber +  newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos'+ datasetnumber + partnumber +  newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 540 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 630 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' +  datasetnumber  + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' +  datasetnumber  + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 720 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' +  datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' +  datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 810 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' +  datasetnumber + partnumber  + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' +  datasetnumber + partnumber  + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 900 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber + partnumber  +  newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber + partnumber  +  newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 990 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 1080 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 1170 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/' + datasetnumber  + partnumber + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/' + datasetnumber  + partnumber + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             elif currentFrame == 1260 + currentFrame:
                 for j in range(0,5):
-                    shutil.copy('/Users/jevanteqaiyim/Desktop/datasetvideos/'+ datasetnumber + partnumber  + newarray[j + currentFrame], folders[i])
+                    shutil.copy('./datasetvideos/'+ datasetnumber + partnumber  + newarray[j + currentFrame], folders[i])
                     if j == 4:
                         currentFrame += 90
             else:
